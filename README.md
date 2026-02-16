@@ -8,18 +8,46 @@ This tool resizes images to optimal dimensions for printing on cakes.
 pip install -r requirements.txt
 ```
 
-## Quick Start (Batch Processing - RECOMMENDED)
+## Quick Start - Three Easy Ways to Resize
 
-**This is the easiest method!**
+### Method 1: Interactive Menu with Presets (BEST FOR BEGINNERS) ⭐
+
+Choose from preset cake sizes with an interactive menu:
+
+1. Place your images in the `input/` folder
+2. Run the preset tool:
+   ```bash
+   python3 resize_presets.py
+   ```
+3. Select your cake size from the menu
+4. Find your resized images in the `output/` folder
+
+**Available presets:**
+- Small Round (6-8 inches)
+- Standard Sheet (8x10 inches) - Default
+- Large Round (10-12 inches)
+- Quarter Sheet (9x13 inches)
+- Half Sheet (12x18 inches)
+- Square Cake (8x8 inches)
+
+### Method 2: Automatic Batch Processing (FASTEST)
+
+Process all images with default settings (8x10 inch cake):
 
 1. Place your images in the `input/` folder
 2. Run the batch processor:
    ```bash
-   python batch_resize.py
+   python3 batch_resize.py
    ```
 3. Find your resized images in the `output/` folder
 
-That's it! All images will be automatically resized to cake-friendly dimensions.
+### Method 3: Single Image Processing
+
+For processing one specific image:
+
+```bash
+python3 resize_for_cake.py <your_image.jpg>
+```
 
 ## Alternative: Single Image Processing
 
